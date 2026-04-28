@@ -1,0 +1,15 @@
+{
+  "name": "synetelas-offers",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static GitHub Pages site for Synetelas offers.",
+  "scripts": {
+    "build": "tailwindcss -i ./assets/css/tailwind.input.css -o ./assets/css/tailwind.css --minify",
+    "dev": "tailwindcss -i ./assets/css/tailwind.input.css -o ./assets/css/tailwind.css --watch",
+    "check": "npm run build && node --check ./assets/js/main.js && node ./scripts/check-static-assets.mjs"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.2.4",
+    "tailwindcss": "^4.2.4"
+  }
+}
