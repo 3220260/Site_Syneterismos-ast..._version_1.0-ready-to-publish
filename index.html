@@ -1705,39 +1705,19 @@
     </div>
 </section>
 
-<div id="chatModal" class="hidden fixed inset-0 z-[150] bg-slate-900/60 backdrop-blur-sm flex flex-col items-center justify-center md:items-end md:justify-end p-0 md:p-6 transition-opacity duration-300 opacity-0">
- 
-    <div id="chatModalContent" class="bg-white w-full h-full md:max-w-md md:h-[600px] rounded-none md:rounded-2xl shadow-2xl overflow-hidden flex flex-col transform translate-y-full md:translate-y-10 md:scale-95 transition-all duration-400 ease-out md:origin-bottom-right" data-stop-click>
- 
-        <!-- ✅ ΕΝΙΑΙΟ header (ένα μόνο div αντί για δύο) -->
-        <div id="chatHeader" class="w-full flex justify-between items-center px-4 py-3 bg-blue-700 border-b border-slate-100 shadow-sm shrink-0 z-10">
-            <h3 class="font-bold text-white flex items-center gap-2">
-                <i class="fa-solid fa-robot text-white"></i>
-                <span>Ψηφιακός Βοηθός Synetelas </span>
-            </h3>
-            <button data-action="close-chat" class="w-9 h-9 flex items-center justify-center rounded-full bg-slate-100 hover:bg-slate-200 text-slate-700 transition-colors">
-                <i class="fa-solid fa-xmark text-xl"></i>
-            </button>
-        </div>
- 
-        <!-- ✅ Floating κουμπί κλεισίματος (εμφανίζεται μόνο όταν κρυφτεί ο header) -->
-        <button id="chatFloatingClose" data-action="close-chat">
-            ✕
-        </button>
- 
-        <!-- iframe chatbot -->
-        <iframe
-            title="Ψηφιακός Βοηθός Synetelas"
-            data-src="https://chat-bot-flame-six.vercel.app"
-            class="w-full h-full grow border-none bg-white"
-            loading="lazy"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allow="microphone">
-        </iframe>
- 
-    </div>
+<div
+  id="chatModal"
+  class="hidden fixed inset-0 z-[150] bg-transparent transition-opacity duration-300 opacity-0"
+>
+  <iframe
+    title="Ψηφιακός Βοηθός Synetelas"
+    data-src="https://chat-bot-flame-six.vercel.app"
+    class="w-full h-full border-none bg-transparent"
+    loading="lazy"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allow="microphone"
+  ></iframe>
 </div>
- 
 <div id="imagePreviewModal" class="hidden fixed inset-0 z-[10001] bg-slate-950/95 backdrop-blur-sm">
     <button type="button" class="image-preview-close" aria-label="Κλείσιμο προεπισκόπησης" data-modal-close="imagePreviewModal">
         <i class="fa-solid fa-xmark"></i>
