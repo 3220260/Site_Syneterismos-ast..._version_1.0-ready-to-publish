@@ -326,3 +326,8 @@ body.overflow-hidden { overflow: hidden !important; overscroll-behavior: none; }
         transition-duration: 0.01ms !important;
     }
 }
+/* Hide AI assistant */
+.helper-container,
+#chatModal {
+    display: none !important;
+}
