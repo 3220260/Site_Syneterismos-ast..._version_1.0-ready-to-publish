@@ -1,7 +1,7 @@
 /* =========================================
    1. CORE SETTINGS & TRACKING
    ========================================= */
-const GA_MEASUREMENT_ID = 'G-P6TN4GQJLW';
+const GA_MEASUREMENT_ID = 'G-ZXPYBSBLTX';
 const CHATBOT_ORIGIN = 'https://chat-bot-flame-six.vercel.app';
 const IMAGE_PREVIEW_MIN_ZOOM = 1;
 const IMAGE_PREVIEW_MAX_ZOOM = 4;
